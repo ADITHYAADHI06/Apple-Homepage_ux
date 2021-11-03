@@ -42,10 +42,27 @@
     color: #FFFFFF;
 }
 
-.mainbg{
+.i13mainbg{
     background-color: #34283C;
-    width: 100%;
-    height: 700px;
+   
+}
+.i13bgi{
+   width: 100%;
+   height: 350px;
+   /* background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg"); */
+   background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg");
+  background-position: center;
+   background-size: 100% 100%;
+
+}
+
+
+/* flex containers */
+.fwbgc{
+    background-color: #F5F5F7;
+}
+.fipbgc{
+    background-color: #FBFBFD;
 }
 
 @media (max-width: 576px) {  }
