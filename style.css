@@ -118,6 +118,7 @@
 .footerbg {
   color: #9eacbb;
   background-color: #f5f5f7;
+  width: 100%;
 }
 footer h5 {
   color: #1d1d1f;
@@ -138,18 +139,65 @@ footer p a {
 
   text-decoration: none;
 }
-footer p:hover {
+footer a:hover {
   text-decoration: underline;
 }
+.box1p{
+  color: #535355d5;
+}
 @media (max-width: 768px) {
-  .display-s-none {
-    display: none;
+  footer h5 {
+    color: #1d1d1f;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    
+  }
+  footer p {
+    color: #424245;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 12px;
+  }
+  footer p a {
+    color: #424245e5;
+    font-size: 14px;
+    line-height: 16px;
+  
+    text-decoration: none;
+  }
+  .mr-10{
+   margin-left: 10px;
+
+  }
+
+  .efooterp{
+       margin-left: 20px;
+       line-height: 22px;
+       padding-right: 30px;
+       width: 100%;
+  }
+  .box1p{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #535355d5;
+    font-size: 12px;
+  }
+  .footer-nav {
+    width: 100%;
+    margin-left: 20px;
+    padding: 0px;
   }
 }
+@media (min-width: 769px) {
+ 
+}
+
 
 @media (max-width: 1200px) {
-  .m-70 {
-    margin-left: 0px;
+  .m-70{
+      margin-left: 0px;
   }
 }
 
