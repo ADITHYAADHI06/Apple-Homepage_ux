@@ -1,107 +1,163 @@
-.navdark{
-    background-color:#333333 ;
-   
+.navdark {
+  background-color: #333333;
 }
-.navwhite{
-    color: #ffffffd0;
-    font-weight: 300;
+.navwhite {
+  color: #ffffffd0;
+  font-weight: 300;
 }
-.m-70{
-    margin-left: 70px;
+.m-70 {
+  margin-left: 70px;
 }
-.mt-90{
-    margin-top: 90px;
+.mt-90 {
+  margin-top: 90px;
 }
-.navfont{
+.navfont {
   font-size: 13px;
 }
 
-.alert-text-color{
-    color: #3E3E40;
-    background-color:#F5F5F7 ;
+.alert-text-color {
+  color: #3e3e40;
+  background-color: #f5f5f7;
 }
-.alert-font{
-    font-size: 14px;
-}
-
-
-
-.header-h1{
-         font-size: 50px;
-         font-weight: 700;
+.alert-font {
+  font-size: 14px;
 }
 
-.header-h3{
-    font-size: 30px;
-}
-.header-a{
-    font-size: 20px;
+.header-h1 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-.navbar a:hover{
-          color: #FFFFFF;
+.header-h3 {
+  font-size: 30px;
 }
-.hover:hover{
-    color: #FFFFFF;
+.header-a {
+  font-size: 20px;
 }
 
-.i13mainbg{
-    background-color: #34283C;
-   
+.navbar a:hover {
+  color: #ffffff;
 }
-.i13bgi{
-   width: 100%;
-   height: 350px;
-   /* background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg"); */
-   background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg");
+.hover:hover {
+  color: #ffffff;
+}
+
+.i13mainbg {
+  background-color: #34283c;
+}
+.i13bgi {
+  width: 100%;
+  height: 350px;
+  /* background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg"); */
+  background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg");
   background-position: center;
-   background-size: 100% 100%;
-
+  background-size: 100% 100%;
 }
-
 
 /* flex containers */
-.fwbgc{
-    background-color: #F5F5F7;
+.fwbgc {
+  background-color: #f5f5f7;
 }
-.fipbgc{
-    background-color: #FBFBFD;
+.fipbgc {
+  background-color: #fbfbfd;
 }
-.wrc{
-        color: #CD282E;       
+.wrc {
+  color: #cd282e;
 }
-.fw-600{
-    font-weight: 600;
+.fw-600 {
+  font-weight: 600;
 }
-.gredient{
-    background: #ff6e7f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right,#ff6e7f, #bfe9ff );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,#ff6e7f, #bfe9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
-}
-.fh2{
-    font-size: 35px;
-}
-.fh4{
-    font-size: 22px;
-}
-.fa{
-    font-size: 17px;
-}
-@media (max-width: 576px) {  }
+.gredient {
+  background: #ff6e7f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6e7f,
+    #bfe9ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6e7f,
+    #bfe9ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-@media (max-width: 1200px) { 
-    .m-70{
-        margin-left: 0px;
-    }
-
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fh2 {
+  font-size: 35px;
+}
+.fh4 {
+  font-size: 22px;
+}
+.fa {
+  font-size: 17px;
 }
 
-@media (min-width: 992px) { }
+.tv {
+  background-image: url("tv.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+}
+.fs-55 {
+  font-size: 60px;
+}
+.gold {
+  background-image: url(gold.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footerbg {
+  color: #9eacbb;
+  background-color: #f5f5f7;
+}
+footer h5 {
+  color: #1d1d1f;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+footer p {
+  color: #424245;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+footer p a {
+  color: #424245e5;
+  font-size: 12px;
+  line-height: 16px;
 
-@media (min-width: 1200px) {  }
+  text-decoration: none;
+}
+footer p:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .display-s-none {
+    display: none;
+  }
+}
 
-@media (min-width: 1400px) {  }
+@media (max-width: 1200px) {
+  .m-70 {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
