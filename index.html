@@ -1,554 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS link -->
-  <link rel="stylesheet" href="main.css" />
-  <!-- fonts link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Apple page clone</title>
+  </head>
 
+  <body>
+    <!-- nav bar part start-->
+    <div class="container-fluid px-5 navdark">
+      <nav class="navbar py-3 navbar-expand-lg">
+        <a
+          class="navbar-brand d-flex justify-content-md-center p-0 py-0 pb-1 m-70 px-0 px-md-3 navwhite"
+          href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            fill="#D6D6D6"
+            class="bi bi-apple"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+            />
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+            /></svg
+        ></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="#FFFFFF"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              /></svg
+          ></span>
+        </button>
+        <div
+          class="collapse navbar-collapse navwhite"
+          id="navbarSupportedContent"
+        >
+          <form class="d-flex my-3 d-lg-none">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success navwhite" type="submit">
+              Search
+            </button>
+          </form>
+          <ul class="navbar-nav py-0 ms-4 mt-0 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#">Mac</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#">iPad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#">iPhone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#">Watch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#"
+                >AirPods</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#"
+                >TV & Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#"
+                >Only on Apple</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#"
+                >Accesssories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 navwhite navfont pe-4" href="#"
+                >Support</a
+              >
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link py-0 navfont pe-4 mx-3 navwhite" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#ffffffd0"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  /></svg
+              ></a>
+            </li>
 
-  <title>Apple page clone</title>
-</head>
-
-<body>
-  <!-- nav bar part start-->
-  <div class="container-fluid px-5 navdark">
-    <nav class="navbar py-3 navbar-expand-lg">
-      <a class="
-            navbar-brand
-            d-flex
-            justify-content-md-center
-            p-0
-            py-0
-            pb-1
-            m-70
-            px-0 px-md-3
-            navwhite
-          " href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#D6D6D6" class="bi bi-apple"
-          viewBox="0 0 16 16">
-          <path
-            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
-          <path
-            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
-        </svg></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFFFFF" class="bi bi-list"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-          </svg></span>
-      </button>
-      <div class="collapse navbar-collapse navwhite" id="navbarSupportedContent">
-        <form class="d-flex my-3 d-lg-none">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success navwhite" type="submit">
-            Search
-          </button>
-        </form>
-        <ul class="navbar-nav py-0 ms-4 mt-0 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">Mac</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">iPad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">iPhone</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">Watch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">AirPods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">TV & Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">Only on Apple</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">Accesssories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-0 navwhite navfont pe-4" href="#">Support</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link py-0 navfont pe-4 mx-3 navwhite" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="#ffffffd0" class="bi bi-search" viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link navfont py-0 navwhite" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-                height="18" fill="#ffffffd0" class="bi bi-handbag" viewBox="0 0 16 16">
-                <path
-                  d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z" />
-              </svg></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <!-- nav bar part end-->
-
-  <!-- alert s -->
-  <div class="container-fluid mb-5 p-0">
-    <div class="alert text-center py-2 px-3  px-md-4 alert-font alert-text-color" role="alert">
-      Shop now at the Apple Store online with many great ways to buy. Get
-      free, no-contact delivery, Specialist help and
-      <a href="http://" class="text-link text-decoration-none">more
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-        </svg></a>
+            <li class="nav-item">
+              <a class="nav-link navfont py-0 navwhite" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="#ffffffd0"
+                  class="bi bi-handbag"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </div>
-  <header>
-    <div class="container-fluid pb-3 bg-white">
+
+    <!-- nav bar part end-->
+
+    <!-- alert s -->
+    <div class="container-fluid mb-5 p-0">
+      <div
+        class="alert text-center py-2 px-3 px-md-4 alert-font alert-text-color"
+        role="alert"
+      >
+        Shop now at the Apple Store online with many great ways to buy. Get
+        free, no-contact delivery, Specialist help and
+        <a href="http://" class="text-link text-decoration-none"
+          >more
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            fill="#0368CD"
+            class="bi bi-chevron-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            /></svg
+        ></a>
+      </div>
+    </div>
+    <header>
+      <div class="container-fluid pb-3 bg-white">
+        <div class="row justify-content-center">
+          <div class="col-md-7 col-12 text-center">
+            <h1 class="text-dark header-h1 mb-2">iPhone 13 Pro</h1>
+            <h3 class="text-dark header-h3 fw-normal">Oh. So. Pro</h3>
+            <a href="http://" class="header-a text-link text-decoration-none"
+              >Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="#0368CD"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                /></svg
+            ></a>
+            &nbsp; &nbsp;
+            <a href="http://" class="header-a text-link text-decoration-none"
+              >Buy
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="#0368CD"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-12 text-center">
+            <img
+              src="./images/hero_iphone_13pro__dhnsegysa42u_small_2x17.jpg"
+              alt=""
+              class="img-fluid text-center"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid iPhone13mainbg">
+        <div class="row pt-5 justify-content-center">
+          <div class="col-md-7 col-12 text-center">
+            <h1 class="header-h1 iPhone13-sm-h1 mb-2" style="color: #f5f5f7">
+              iPhone 13
+            </h1>
+            <h3 class="header-h3 fw-normal" style="color: #eab3da">
+              Your new superpower.
+            </h3>
+            <a
+              href="http://"
+              class="header-a iPhone13-sm-a text-link text-decoration-none"
+              >Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="#0368CD"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                /></svg
+            ></a>
+            &nbsp; &nbsp;
+            <a
+              href="http://"
+              class="header-a iPhone13-sm-a text-link text-decoration-none"
+              >Buy
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="#0368CD"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 pe-0 col-12">
+            <div class="i13bgi"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container-fluid mt-5 bg-white">
       <div class="row justify-content-center">
         <div class="col-md-7 col-12 text-center">
-          <h1 class="text-dark header-h1 mb-2">iPhone 13 Pro</h1>
-          <h3 class="text-dark header-h3 fw-normal">Oh. So. Pro</h3>
-          <a href="http://" class="header-a text-link text-decoration-none">Learn More
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0368CD" class="bi bi-chevron-right"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg></a>
+          <h1 class="text-dark header-h1 mb-2">MacBook Pro</h1>
+          <h3 class="text-dark header-h3 fw-normal">Supercharged for pros.</h3>
+          <a href="http://" class="header-a text-link text-decoration-none"
+            >Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
           &nbsp; &nbsp;
-          <a href="http://" class="header-a text-link text-decoration-none">Buy
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0368CD" class="bi bi-chevron-right"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg></a>
+          <a href="http://" class="header-a text-link text-decoration-none"
+            >Buy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-8 col-12 text-center">
-          <img src="hero_iphone_13pro__dhnsegysa42u_small_2x17.jpg" alt="" class="img-fluid text-center" srcset="" />
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="container-fluid iPhone13mainbg">
-      <div class="row pt-5 justify-content-center">
-        <div class="col-md-7 col-12 text-center">
-          <h1 class="header-h1 iPhone13-sm-h1 mb-2" style="color: #f5f5f7">iPhone 13</h1>
-          <h3 class="header-h3 fw-normal" style="color: #eab3da">
-            Your new superpower.
-          </h3>
-          <a href="http://" class="header-a iPhone13-sm-a text-link text-decoration-none">Learn More
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0368CD" class="bi bi-chevron-right"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg></a>
-          &nbsp; &nbsp;
-          <a href="http://" class="header-a iPhone13-sm-a text-link text-decoration-none">Buy
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0368CD" class="bi bi-chevron-right"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg></a>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-8 pe-0 col-12">
-          <div class="i13bgi"></div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <div class="container-fluid mt-5 bg-white">
-    <div class="row justify-content-center">
-      <div class="col-md-7 col-12 text-center">
-        <h1 class="text-dark header-h1 mb-2">MacBook Pro</h1>
-        <h3 class="text-dark header-h3 fw-normal">Supercharged for pros.</h3>
-        <a href="http://" class="header-a text-link text-decoration-none">Learn More
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        &nbsp; &nbsp;
-        <a href="http://" class="header-a text-link text-decoration-none">Buy
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-10 col-12 text-center">
-        <img src="macbookpro__eatonjfwvuc2_medium_2x.jpg" alt="" class="img-fluid text-center" srcset="" />
-      </div>
-    </div>
-  </div>
-
-  <!-- flex-containers  -->
-  <div class="container-fluid mt-5 mx-0">
-    <div class="row mx-1 gy-4 justify-content-center justify-content=md-between">
-      <div class="col-md-6 text-center col-11 fwbgc">
-        <p class="wrc mb-0 mt-5">New</p>
-
-        <h2 class="text-dark fw-bold fh2 mt-0 mb-0">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"
-            class="bi bi-apple pb-1 mb-1 me-1" viewBox="0 0 16 16">
-            <path
-              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
-            <path
-              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
-          </svg>WATCH
-        </h2>
-
-        <p class="wrc mb-2 fw-600">SERIES 7</p>
-
-        <h4 class="text-dark fh4 fw-normal">
-          Introducing our largest display yet.
-        </h4>
-
-        <a href="http://" class="fa text-link text-decoration-none">Learn More
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        &nbsp; &nbsp;
-        <a href="http://" class="fa text-link text-decoration-none">Buy
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        <div class="img mt-5 mt-md-4">
-          <img src="watch__e9n11b6m6yq2_medium_2x.jpg" alt="" class="img-fluid" srcset="" />
-        </div>
-      </div>
-
-      <div class="col-md-6 text-center mt-md-5 fipbgc col-11">
-        <h2 class="text-dark mt-4 fh2 mb-2">
-          iPad <span class="gredient">mini</span>
-        </h2>
-        <h4 class="text-dark fw-normal">Mega power. Mini sized.</h4>
-        <a href="http://" class="fa text-link text-decoration-none">Learn More
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        &nbsp; &nbsp;
-        <a href="http://" class="fa text-link text-decoration-none">Buy
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-
-        <div class="img mt-5 mt-md-3">
-          <img src="ipad_mini__spq4zjcuuaie_medium_2x4.jpg" alt="" class="img-fluid text-center" srcset="" />
+        <div class="col-md-10 col-12 text-center">
+          <img
+            src="./images/macbookpro__eatonjfwvuc2_medium_2x.jpg"
+            alt=""
+            class="img-fluid text-center"
+            srcset=""
+          />
         </div>
       </div>
     </div>
 
-    <div class="
-          row
-          mx-1
-          mt-3 mt-md-1
-          mb-md-4
-          gy-4
-          justify-content-center justify-content-md-between
-        ">
-      <div class="col-md-6 fipbgc text-center col-11">
-        <div class="img">
-          <img src="airpods__fuv6vgn42y2q_medium_2x1.jpg" alt="" class="img-fluid" srcset="" />
-        </div>
+    <!-- flex-containers  -->
+    <div class="container-fluid mt-5 mx-0">
+      <div
+        class="row mx-1 gy-4 justify-content-center justify-content=md-between"
+      >
+        <div class="col-md-6 text-center col-11 fwbgc">
+          <p class="wrc mb-0 mt-5">New</p>
 
-        <h2 class="text-dark fw-bold fh2 mt-4 mt-md-0 mb-0">AirPods</h2>
-
-        <h4 class="text-dark fh4 fw-normal">All-new with Spatial Audio</h4>
-
-        <a href="http://" class="fa text-link text-decoration-none">Learn More
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        &nbsp; &nbsp;
-        <a href="http://" class="fa text-link text-decoration-none">Buy
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-      </div>
-
-      <div class="col-md-6 mb-md-5 text-center fipbgc col-11">
-        <h2 class="text-dark fw-bold fh2 mt-90 mb-2">HomePod Mini</h2>
-
-        <p class="text-disabled">
-          Yellow, orange and blue available in late November.
-        </p>
-
-        <a href="http://" class="fa text-link text-decoration-none">Learn More
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        &nbsp; &nbsp;
-        <a href="http://" class="fa text-link text-decoration-none">Buy
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        <div class="img mt-4">
-          <img src="homepod_mini__b73w4z3ljymu_medium_2x1.jpg" alt="" class="img-fluid" srcset="" />
-        </div>
-      </div>
-    </div>
-
-    <!-- 5-11-2021 -->
-    <div class="
-          row
-          mx-1
-          mt-3 mt-md-1
-          mb-md-4
-          gy-4
-          justify-content-center justify-content-md-between
-        ">
-      <div class="col-md-6 mt-5 text-center fipbgc col-11">
-        <h2 class="text-dark fw-bold fh2 mt-md-3 mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"
-            class="bi bi-apple  pb-1 mb-1 me-1" viewBox="0 0 16 16">
-            <path
-              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
-            <path
-              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
-          </svg>Arcade
-        </h2>
-
-        <h4 class="text-dark fh4 mb-2 fw-normal">
-          Get 3 months free when you buy a new<br />&nbsp;iPhone, iPad, iPod
-          touch, Apple TV or Mac.
-        </h4>
-
-        <a href="http://" class="fa text-link text-decoration-none">Learn More
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        &nbsp; &nbsp;
-        <a href="http://" class="fa text-link text-decoration-none">Try it free<sup>1</sup><svg
-            xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0368CD" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg></a>
-        <div class="img mt-4">
-          <img src="arcade__ewkth5cd0wia_medium_2x1.jpg" alt="" class="img-fluid" srcset="" />
-        </div>
-      </div>
-
-      <div class="col-md-6 mt-md-1 my-4 tv text-center col-11">
-        <div class="flex">
-          <h1 class="text-white fw-bold mt-md-3 mb-md-2 mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFF"
-              class="bi bi-apple pb-1 mb-1 me-1" viewBox="0 0 16 16">
+          <h2 class="text-dark fw-bold fh2 mt-0 mb-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="#000000"
+              class="bi bi-apple pb-1 mb-1 me-1"
+              viewBox="0 0 16 16"
+            >
               <path
-                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+              />
               <path
-                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
-            </svg>tv+
-          </h1>
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+              /></svg
+            >WATCH
+          </h2>
 
-          <h1 class="gold mb-0">SWAGGER</h1>
-          <h4 class="text-white goldh4 mb-2 fw-normal">
-            A story inspried by NBA star Kevin Durant.
+          <p class="wrc mb-2 fw-600">SERIES 7</p>
+
+          <h4 class="text-dark fh4 fw-normal">
+            Introducing our largest display yet.
           </h4>
 
-          <a href="http://" class="mb-md-5 mb-4 mt-md-2 mt-0 fa text-link text-decoration-none">Stream now
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
               <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-            </svg></a>
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          &nbsp; &nbsp;
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Buy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          <div class="img mt-5 mt-md-4">
+            <img
+              src="./images/watch__e9n11b6m6yq2_medium_2x.jpg"
+              alt=""
+              class="img-fluid"
+              srcset=""
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center mt-md-5 fipbgc col-11">
+          <h2 class="text-dark mt-4 fh2 mb-2">
+            iPad <span class="gredient">mini</span>
+          </h2>
+          <h4 class="text-dark fw-normal">Mega power. Mini sized.</h4>
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          &nbsp; &nbsp;
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Buy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+
+          <div class="img mt-5 mt-md-3">
+            <img
+              src="./images/ipad_mini__spq4zjcuuaie_medium_2x4.jpg"
+              alt=""
+              class="img-fluid text-center"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row mx-1 mt-3 mt-md-1 mb-md-4 gy-4 justify-content-center justify-content-md-between"
+      >
+        <div class="col-md-6 fipbgc text-center col-11">
+          <div class="img">
+            <img
+              src="./images/airpods__fuv6vgn42y2q_medium_2x1.jpg"
+              alt=""
+              class="img-fluid"
+              srcset=""
+            />
+          </div>
+
+          <h2 class="text-dark fw-bold fh2 mt-4 mt-md-0 mb-0">AirPods</h2>
+
+          <h4 class="text-dark fh4 fw-normal">All-new with Spatial Audio</h4>
+
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          &nbsp; &nbsp;
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Buy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+        </div>
+
+        <div class="col-md-6 mb-md-5 text-center fipbgc col-11">
+          <h2 class="text-dark fw-bold fh2 mt-90 mb-2">HomePod Mini</h2>
+
+          <p class="text-disabled">
+            Yellow, orange and blue available in late November.
+          </p>
+
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          &nbsp; &nbsp;
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Buy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          <div class="img mt-4">
+            <img
+              src="./images/homepod_mini__b73w4z3ljymu_medium_2x1.jpg"
+              alt=""
+              class="img-fluid"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 5-11-2021 -->
+      <div
+        class="row mx-1 mt-3 mt-md-1 mb-md-4 gy-4 justify-content-center justify-content-md-between"
+      >
+        <div class="col-md-6 mt-5 text-center fipbgc col-11">
+          <h2 class="text-dark fw-bold fh2 mt-md-3 mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="#000000"
+              class="bi bi-apple pb-1 mb-1 me-1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+              />
+              <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+              /></svg
+            >Arcade
+          </h2>
+
+          <h4 class="text-dark fh4 mb-2 fw-normal">
+            Get 3 months free when you buy a new<br />&nbsp;iPhone, iPad, iPod
+            touch, Apple TV or Mac.
+          </h4>
+
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          &nbsp; &nbsp;
+          <a href="http://" class="fa text-link text-decoration-none"
+            >Try it free<sup>1</sup
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#0368CD"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></a>
+          <div class="img mt-4">
+            <img
+              src="./images/arcade__ewkth5cd0wia_medium_2x1.jpg"
+              alt=""
+              class="img-fluid"
+              srcset=""
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-md-1 my-4 tv text-center col-11">
+          <div class="flex">
+            <h1 class="text-white fw-bold mt-md-3 mb-md-2 mb-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#FFF"
+                class="bi bi-apple pb-1 mb-1 me-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+                />
+                <path
+                  d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+                /></svg
+              >tv+
+            </h1>
+
+            <h1 class="gold mb-0">SWAGGER</h1>
+            <h4 class="text-white goldh4 mb-2 fw-normal">
+              A story inspried by NBA star Kevin Durant.
+            </h4>
+
+            <a
+              href="http://"
+              class="mb-md-5 mb-4 mt-md-2 mt-0 fa text-link text-decoration-none"
+              >Stream now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-play-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                /></svg
+            ></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- footer Section -->
-  <footer class="footerbg py-3">
-    <div class="container px-md-5">
-      <div class="box1 px-md-4">
-        <p class="box1p">
-          1. ₹99/month after free trial. One subscription per Family Sharing
-          group. Offer is valid for 3 months after eligible device activation.
-          Plan automatically renews until cancelled. Restrictions and other
-          terms apply.
-        </p>
-        <p class="box1p">
-          Apple TV+ is ₹99/month after free trial. One subscription per Family
-          Sharing group. Offer is valid for 3 months after eligible device
-          activation. Plan automatically renews until cancelled. Restrictions
-          and other terms apply.
-        </p>
-        <hr />
-      </div>
-      <div class="box2 mx-md-4">
-        <div class="row justify-content-md-between text-start  justify-content-evenly">
-          <div class="col-md-2 mr-10 col-4">
-            <h5>Shop and Learn</h5>
-            <p><a href="http://">Store</a></p>
-            <p><a href="http://">Mac</a></p>
-            <p><a href="http://">iPad</a></p>
-            <p><a href="http://">iPhone</a></p>
-            <p><a href="http://">Watch</a></p>
-            <p><a href="http://">AirPods</a></p>
-            <p><a href="http://"> TV & Home</a></p>
-            <p><a href="http://">iPod touch</a></p>
-            <p><a href="http://">AirTag</a></p>
-            <p><a href="http://">Accesssories</a></p>
-          </div>
-          <div class="col-md-2 col-4 mr-10 ms-md-4 me-md-2 ">
-            <div class="services mb-md-4">
-              <h5>Services</h5>
-              <p><a href="http://">Apple Music</a></p>
-              <p><a href="http://">Apple TV+</a></p>
-              <p><a href="http://">Apple Arcade</a></p>
-              <p><a href="http://">iCloud</a></p>
-              <p><a href="http://">Apple Books</a></p>
-              <p><a href="http://">Apple Podcasts</a></p>
-              <p><a href="http://">App Store</a></p>
-            </div>
-
-            <div class="Account">
-              <h5>Account</h5>
-              <p><a href="http://">Manage Your Apple ID</a></p>
-              <p><a href="http://">Apple Store Account</a></p>
-              <p><a href="http://">iCloud.com</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 col-4 mr-10 mx-md-4 ">
-            <div class="apple_store mb-md-4">
-              <h5>Apple Store</h5>
-              <p><a href="http://">Ways to Buy</a></p>
-              <p><a href="http://">Apple Trade in</a></p>
-              <p><a href="http://">Recycling Programme</a></p>
-              <p><a href="http://">Order Status</a></p>
-              <p><a href="http://">Order Help</a></p>
-            </div>
-            <div class="Applevals mb-md-4">
-              <h5>Apple Values</h5>
-              <p><a href="http://">Accessibility</a></p>
-              <p><a href="http://">Environment</a></p>
-              <p><a href="http://">Privacy</a></p>
-              <p><a href="http://">Supplier Responsibility</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 col-4 mr-10 ms-md-3 me-md-5 ">
-            <div class="For Business mb-md-4">
-              <h5>For Business</h5>
-              <p><a href="http://">Apple and Business</a></p>
-            </div>
-            <div class="For Education mb-md-4">
-              <h5>for Education</h5>
-              <p><a href="http://">Apple and Education</a></p>
-              <p><a href="http://">Shop for Education</a></p>
-              <p><a href="http://">Shop for University</a></p>
-            </div>
-
-            <div class="for healthcare">
-              <h5>For Healthcare</h5>
-              <p><a href="http://">Apple in Healthcare</a></p>
-              <p><a href="http://">Health on Apple Watch</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 col-10 text-left mb-4 ms-md-3 ms-4">
-            <div class="ABout-Apple mb-md-4">
-              <h5>About Apple</h5>
-              <p><a href="http://">Newsroom</a></p>
-              <p><a href="http://">Apple Leadership</a></p>
-              <p><a href="http://">Career Opportunities</a></p>
-              <p><a href="http://">Investors</a></p>
-              <p><a href="http://">Ethics & Compliance</a></p>
-              <p><a href="http://">Events</a></p>
-              <p><a href="http://">Contact Apple</a></p>
-            </div>
-          </div>
-
-
-
-
+    <!-- footer Section -->
+    <footer class="footerbg py-3">
+      <div class="container px-md-5">
+        <div class="box1 px-md-4">
+          <p class="box1p">
+            1. ₹99/month after free trial. One subscription per Family Sharing
+            group. Offer is valid for 3 months after eligible device activation.
+            Plan automatically renews until cancelled. Restrictions and other
+            terms apply.
+          </p>
+          <p class="box1p">
+            Apple TV+ is ₹99/month after free trial. One subscription per Family
+            Sharing group. Offer is valid for 3 months after eligible device
+            activation. Plan automatically renews until cancelled. Restrictions
+            and other terms apply.
+          </p>
+          <hr />
         </div>
-      </div>
+        <div class="box2 mx-md-4">
+          <div
+            class="row justify-content-md-between text-start justify-content-evenly"
+          >
+            <div class="col-md-2 mr-10 col-4">
+              <h5>Shop and Learn</h5>
+              <p><a href="http://">Store</a></p>
+              <p><a href="http://">Mac</a></p>
+              <p><a href="http://">iPad</a></p>
+              <p><a href="http://">iPhone</a></p>
+              <p><a href="http://">Watch</a></p>
+              <p><a href="http://">AirPods</a></p>
+              <p><a href="http://"> TV & Home</a></p>
+              <p><a href="http://">iPod touch</a></p>
+              <p><a href="http://">AirTag</a></p>
+              <p><a href="http://">Accesssories</a></p>
+            </div>
+            <div class="col-md-2 col-4 mr-10 ms-md-4 me-md-2">
+              <div class="services mb-md-4">
+                <h5>Services</h5>
+                <p><a href="http://">Apple Music</a></p>
+                <p><a href="http://">Apple TV+</a></p>
+                <p><a href="http://">Apple Arcade</a></p>
+                <p><a href="http://">iCloud</a></p>
+                <p><a href="http://">Apple Books</a></p>
+                <p><a href="http://">Apple Podcasts</a></p>
+                <p><a href="http://">App Store</a></p>
+              </div>
 
-      <div class="row  ">
-        <div class="col-md-8 ms-4 col-10">
-          <p class="efooterp">More ways to shop: <a href="http://" style="color: #0066D4;">Find a retailer</a> near you.
-            or call 000800 040 1966.</p>
-          <hr>
-          <div class="footer-nav d-flex flex-wrap-reverse justify-content-md-between">
-            <p>Copyright © 2021 Apple Inc. All rights
-              reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://">Privacy
-                Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
-                href="http://">Sales Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://">Site
-                Map</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://">Legal</a></p>
-            <div class="fnend">
-              <p><a href="http://Home">India</a></p>
+              <div class="Account">
+                <h5>Account</h5>
+                <p><a href="http://">Manage Your Apple ID</a></p>
+                <p><a href="http://">Apple Store Account</a></p>
+                <p><a href="http://">iCloud.com</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-4 mr-10 mx-md-4">
+              <div class="apple_store mb-md-4">
+                <h5>Apple Store</h5>
+                <p><a href="http://">Ways to Buy</a></p>
+                <p><a href="http://">Apple Trade in</a></p>
+                <p><a href="http://">Recycling Programme</a></p>
+                <p><a href="http://">Order Status</a></p>
+                <p><a href="http://">Order Help</a></p>
+              </div>
+              <div class="Applevals mb-md-4">
+                <h5>Apple Values</h5>
+                <p><a href="http://">Accessibility</a></p>
+                <p><a href="http://">Environment</a></p>
+                <p><a href="http://">Privacy</a></p>
+                <p><a href="http://">Supplier Responsibility</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-4 mr-10 ms-md-3 me-md-5">
+              <div class="For Business mb-md-4">
+                <h5>For Business</h5>
+                <p><a href="http://">Apple and Business</a></p>
+              </div>
+              <div class="For Education mb-md-4">
+                <h5>for Education</h5>
+                <p><a href="http://">Apple and Education</a></p>
+                <p><a href="http://">Shop for Education</a></p>
+                <p><a href="http://">Shop for University</a></p>
+              </div>
+
+              <div class="for healthcare">
+                <h5>For Healthcare</h5>
+                <p><a href="http://">Apple in Healthcare</a></p>
+                <p><a href="http://">Health on Apple Watch</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-10 text-left mb-4 ms-md-3 ms-4">
+              <div class="ABout-Apple mb-md-4">
+                <h5>About Apple</h5>
+                <p><a href="http://">Newsroom</a></p>
+                <p><a href="http://">Apple Leadership</a></p>
+                <p><a href="http://">Career Opportunities</a></p>
+                <p><a href="http://">Investors</a></p>
+                <p><a href="http://">Ethics & Compliance</a></p>
+                <p><a href="http://">Events</a></p>
+                <p><a href="http://">Contact Apple</a></p>
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-8 ms-4 col-10">
+            <p class="efooterp">
+              More ways to shop:
+              <a href="http://" style="color: #0066d4">Find a retailer</a> near
+              you. or call 000800 040 1966.
+            </p>
+            <hr />
+            <div
+              class="footer-nav d-flex flex-wrap-reverse justify-content-md-between"
+            >
+              <p>
+                Copyright © 2021 Apple Inc. All rights
+                reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                  href="http://"
+                  >Privacy Policy</a
+                >&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://">Terms of Use</a
+                >&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://">Sales Policy</a
+                >&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://">Site Map</a
+                >&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://">Legal</a>
+              </p>
+              <div class="fnend">
+                <p><a href="http://Home">India</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

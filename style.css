@@ -48,8 +48,7 @@
 .i13bgi {
   width: 100%;
   height: 350px;
-  /* background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg"); */
-  background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg");
+  background-image: url("./images/2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg");
   background-position: center;
   background-size: 100% 100%;
 }
@@ -94,7 +93,7 @@
 }
 
 .tv {
-  background-image: url("tv.jpg");
+  background-image: url("./images/tv.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -110,7 +109,7 @@
 
 .gold {
   font-size: 60px;
-  background-image: url(gold.jpg);
+  background-image: url("./images/gold.jpg");
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -212,7 +211,7 @@ footer a:hover {
   .i13bgi {
     width: 100%;
     height: 300px;
-    background-image: url("2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg");
+    background-image: url("./images/2hero_iphone_13__f194u1rdooeq_medium_2x2.jpg");
     background-position: center;
     background-size: 100% 100%;
   }
@@ -226,7 +225,7 @@ footer a:hover {
   }
   .tv {
     height: 300px;
-    background-image: url("tv.jpg");
+    background-image: url("./images/tv.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
